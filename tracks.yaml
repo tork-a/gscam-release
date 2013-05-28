@@ -13,7 +13,7 @@ tracks:
     patches: null
     release_inc: -1
     release_tag: :{version}
-    ros_distro: groovy
+    ros_distro: hydro
     vcs_type: git
     vcs_uri: git://github.com/ros-drivers/gscam.git
     version: :{auto}
