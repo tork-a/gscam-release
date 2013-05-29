@@ -1,0 +1,12 @@
+Source: ros-groovy-gscam
+Section: misc
+Priority: extra
+Maintainer: Jonathan Bohren <jbo@jhu.edu>, Russell Toris <rctoris@wpi.edu>
+Build-Depends: debhelper (>= 7.0.50~), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, ros-groovy-camera-calibration-parsers, ros-groovy-camera-info-manager, ros-groovy-catkin, ros-groovy-image-transport, ros-groovy-opencv2, ros-groovy-roscpp, ros-groovy-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-groovy-gscam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-camera-calibration-parsers, ros-groovy-camera-info-manager, ros-groovy-image-transport, ros-groovy-opencv2, ros-groovy-roscpp, ros-groovy-sensor-msgs
+Description: A ROS camera driver that uses gstreamer to connect to devices such as webcams.
