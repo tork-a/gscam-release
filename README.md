@@ -11,8 +11,8 @@ for more ROS-like configuration and more control over the GStreamer interface.
 
 Note that this pacakge can be built both in a rosbuild and catkin workspaces.
 
-ROS API
--------
+ROS API (stable)
+----------------
 
 ### gscam
 
@@ -36,6 +36,11 @@ This can be run as both a node and a nodelet.
  * `~reopen_on_eof`: Re-open the stream if it ends (EOF).
  * `~sync_sink`: Synchronize the app sink (sometimes setting this to `false` can resolve problems with sub-par framerates).
 
+C++ API (unstable)
+------------------
+
+The gscam c++ library can be used, but it is not guaranteed to be stable. 
+
 Examples
 --------
 
@@ -48,4 +53,4 @@ are examples for:
  * [Video File](examples/videofile.launch): Any videofile readable by GStreamer
  * [DeckLink](examples/decklink.launch):
    [BlackMagic](http://www.blackmagicdesign.com/products/decklink/models)
-   DeckLink SDI capture cards
+   DeckLink SDI capture cards (note: this requires the `gst-plugins-bad` plugins)
