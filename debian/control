@@ -1,0 +1,12 @@
+Source: ros-lunar-gscam
+Section: misc
+Priority: extra
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Build-Depends: debhelper (>= 9.0.0), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, ros-lunar-camera-calibration-parsers, ros-lunar-camera-info-manager, ros-lunar-catkin, ros-lunar-cv-bridge, ros-lunar-image-transport, ros-lunar-nodelet, ros-lunar-roscpp, ros-lunar-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-lunar-gscam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-camera-calibration-parsers, ros-lunar-camera-info-manager, ros-lunar-cv-bridge, ros-lunar-image-transport, ros-lunar-nodelet, ros-lunar-roscpp, ros-lunar-sensor-msgs
+Description: A ROS camera driver that uses gstreamer to connect to devices such as webcams.
