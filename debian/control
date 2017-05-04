@@ -1,0 +1,12 @@
+Source: ros-kinetic-gscam
+Section: misc
+Priority: extra
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Build-Depends: debhelper (>= 9.0.0), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, ros-kinetic-camera-calibration-parsers, ros-kinetic-camera-info-manager, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-gscam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-camera-calibration-parsers, ros-kinetic-camera-info-manager, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-sensor-msgs
+Description: A ROS camera driver that uses gstreamer to connect to devices such as webcams.
