@@ -1,3 +1,26 @@
+## gscam (jade) - 0.2.0-0
+
+The packages in the `gscam` repository were released into the `jade` distro by running `/usr/bin/bloom-release gscam --track jade --ros-distro jade` on `Thu, 04 May 2017 02:16:51 -0000`
+
+The `gscam` package was released.
+
+Version of package(s) in repository `gscam`:
+
+- upstream repository: https://github.com/tork-a/gscam.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.25`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.1`
+- vcstools version: `0.1.39`
+
+
 ## gscam (indigo) - 0.2.0-0
 
 The packages in the `gscam` repository were released into the `indigo` distro by running `/usr/bin/bloom-release gscam --track indigo --ros-distro indigo` on `Thu, 04 May 2017 01:38:50 -0000`
