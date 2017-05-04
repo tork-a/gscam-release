@@ -19,6 +19,9 @@ if(USE_ROSBUILD)
   include_directories(${GLIB_INCLUDE_DIRS} ${GST_APP_INCLUDE_DIRS})
 
   rosbuild_add_library(gscam src/gscam.cpp)
+  target_link_libraries(gscam
+    ${GSTREAMER_LIBRARIES}
+    ${GST_APP_LIBRARIES})
 
   rosbuild_add_executable(gscam_node src/gscam_node.cpp)
   target_link_libraries(gscam_node gscam
@@ -43,7 +46,7 @@ else()
     LIBRARIES gscam
     CATKIN_DEPENDS roscpp nodelet image_transport sensor_msgs
     camera_calibration_parsers camera_info_manager
-    #DEPENDS opencv2
+    DEPENDS GSTREAMER GST_APP
     )
 
   include_directories(
@@ -53,6 +56,10 @@ else()
     ${GST_APP_INCLUDE_DIRS})
 
   add_library(gscam src/gscam.cpp)
+  target_link_libraries(gscam
+    ${catkin_LIBRARIES}
+    ${GSTREAMER_LIBRARIES}
+    ${GST_APP_LIBRARIES})
 
   add_executable(gscam_node src/gscam_node.cpp)
   target_link_libraries(gscam_node gscam
@@ -88,6 +95,10 @@ else()
     examples/gscam_nodelet.launch
     examples/nodelet_pipeline.launch
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+    )
+
+  install(FILES examples/uncalibrated_parameters.ini
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/examples
     )
 
   # Interim compatibility
