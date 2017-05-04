@@ -1,0 +1,12 @@
+Source: ros-indigo-gscam
+Section: misc
+Priority: extra
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Build-Depends: debhelper (>= 9.0.0), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, ros-indigo-camera-calibration-parsers, ros-indigo-camera-info-manager, ros-indigo-catkin, ros-indigo-cv-bridge, ros-indigo-image-transport, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-gscam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-camera-calibration-parsers, ros-indigo-camera-info-manager, ros-indigo-cv-bridge, ros-indigo-image-transport, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-sensor-msgs
+Description: A ROS camera driver that uses gstreamer to connect to devices such as webcams.
